@@ -1,0 +1,20 @@
+test_audio_samples (test_kit.DriveTests.test_audio_samples) ... ok
+test_bcd_carry (test_kit.DriveTests.test_bcd_carry) ... ok
+test_boundary_and_leadout (test_kit.DriveTests.test_boundary_and_leadout) ... ok
+test_disconnect_mid_batch (test_kit.DriveTests.test_disconnect_mid_batch) ... ok
+test_exports (test_kit.DriveTests.test_exports) ... ok
+test_header_and_form1 (test_kit.DriveTests.test_header_and_form1) ... ok
+test_invalid_layouts (test_kit.DriveTests.test_invalid_layouts) ... ok
+test_invalid_requests (test_kit.DriveTests.test_invalid_requests) ... ok
+test_media_changes_after_error (test_kit.DriveTests.test_media_changes_after_error) ... ok
+test_media_changes_during_read (test_kit.DriveTests.test_media_changes_during_read) ... ok
+test_modes (test_kit.DriveTests.test_modes) ... ok
+test_report (test_kit.DriveTests.test_report) ... ok
+test_retries (test_kit.DriveTests.test_retries) ... ok
+test_short_read_adapter (test_kit.DriveTests.test_short_read_adapter) ... ok
+test_swap_and_empty (test_kit.DriveTests.test_swap_and_empty) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.037s
+
+OK

@@ -1,0 +1,17 @@
+{
+  "scope": "Original PS5 and PS5 Slim only",
+  "targets": [
+    {
+      "model_family": "PS5 original",
+      "hardware_tested": false,
+      "status": "not_tested"
+    },
+    {
+      "model_family": "PS5 Slim",
+      "hardware_tested": false,
+      "status": "not_tested"
+    }
+  ],
+  "software_results": "results/compatibility.json",
+  "note": "No console-specific behavior is simulated or validated. The virtual backend is model-independent. No PS5 Pro or other console target is included."
+}

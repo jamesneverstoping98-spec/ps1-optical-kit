@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-18T16:07:52.516312+00:00",
+  "scope": "synthetic_virtual_backend",
+  "hardware_tested": false,
+  "games_tested": false,
+  "swanstation_integration_tested": false,
+  "backend": "ps1kit.VirtualDrive",
+  "summary": {
+    "passed": 9,
+    "failed": 0
+  },
+  "cases": [
+    {
+      "id": "layout_data",
+      "status": "pass",
+      "details": {
+        "toc": {
+          "identity": "synthetic-data-1",
+          "tracks": [
+            {
+              "number": 1,
+              "start": 0,
+              "end": 40,
+              "mode": "MODE2_FORM1"
+            }
+          ]
+        },
+        "raw_sha256": "dfc64fc672fea956427252c1b81a9d3dbbcd083b801a8aa298477d9c15417e9c"
+      }
+    },
+    {
+      "id": "layout_mixed",
+      "status": "pass",
+      "details": {
+        "toc": {
+          "identity": "synthetic-mixed-1",
+          "tracks": [
+            {
+              "number": 1,
+              "start": 0,
+              "end": 24,
+              "mode": "MODE2_FORM1"
+            },
+            {
+              "number": 2,
+              "start": 24,
+              "end": 40,
+              "mode": "AUDIO"
+            }
+          ]
+        },
+        "raw_sha256": "33d1ac97a728108a914ca20a9d81b08adc5382023106b9da31bbc39376fde2fc"
+      }
+    },
+    {
+      "id": "layout_audio",
+      "status": "pass",
+      "details": {
+        "toc": {
+          "identity": "synthetic-audio-1",
+          "tracks": [
+            {
+              "number": 1,
+              "start": 0,
+              "end": 20,
+              "mode": "AUDIO"
+            }
+          ]
+        },
+        "raw_sha256": "a22da62969439fc3e29aef857a697bac9ab846c32c5943c15763cd01206c2258"
+      }
+    },
+    {
+      "id": "layout_forms",
+      "status": "pass",
+      "details": {
+        "toc": {
+          "identity": "synthetic-forms-1",
+          "tracks": [
+            {
+              "number": 1,
+              "start": 0,
+              "end": 10,
+              "mode": "MODE1"
+            },
+            {
+              "number": 2,
+              "start": 10,
+              "end": 20,
+              "mode": "MODE2_FORM2"
+            }
+          ]
+        },
+        "raw_sha256": "bb1e00c556863e28cd519c8d25c5438d4ec4270d938ea25a8aa94b6ada326e40"
+      }
+    },
+    {
+      "id": "layout_disc2",
+      "status": "pass",
+      "details": {
+        "toc": {
+          "identity": "synthetic-data-2",
+          "tracks": [
+            {
+              "number": 1,
+              "start": 0,
+              "end": 40,
+              "mode": "MODE2_FORM1"
+            }
+          ]
+        },
+        "raw_sha256": "650ac22f50cb278126dcdc31257cec30a3f1a1d9aded68f75913c20f2fa4d2c2"
+      }
+    },
+    {
+      "id": "transient_retry",
+      "status": "pass",
+      "details": {
+        "recovered_after_failures": 2
+      }
+    },
+    {
+      "id": "permanent_failure",
+      "status": "pass",
+      "details": {
+        "expected_error": "read_failure",
+        "attempts": 3
+      }
+    },
+    {
+      "id": "disconnect_reconnect",
+      "status": "pass",
+      "details": {
+        "expected_error": "disconnected",
+        "reconnected": true
+      }
+    },
+    {
+      "id": "multi_disc_swap",
+      "status": "pass",
+      "details": {
+        "from": "synthetic-data-1",
+        "to": "synthetic-data-2"
+      }
+    }
+  ]
+}
