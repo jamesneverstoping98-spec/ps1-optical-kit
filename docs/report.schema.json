@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Synthetic optical backend report v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "generated_at",
+    "scope",
+    "hardware_tested",
+    "games_tested",
+    "swanstation_integration_tested",
+    "backend",
+    "summary",
+    "cases"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "scope": {
+      "const": "synthetic_virtual_backend"
+    },
+    "hardware_tested": {
+      "const": false
+    },
+    "games_tested": {
+      "const": false
+    },
+    "swanstation_integration_tested": {
+      "const": false
+    },
+    "backend": {
+      "const": "ps1kit.VirtualDrive"
+    },
+    "summary": {
+      "type": "object",
+      "required": [
+        "passed",
+        "failed"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "passed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "failed": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "cases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "status",
+          "details"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "pass",
+              "fail"
+            ]
+          },
+          "details": {
+            "type": [
+              "object",
+              "string"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
