@@ -1,5 +1,8 @@
 # PS1 optical-drive software test kit
 
+> **Development status: simulation/source only. No PS5 console, real optical drive, game, or actual emulator integration has been tested.**
+> Validation is limited to 15 Python unit tests and 9 synthetic virtual-backend probes.
+
 Requires Python 3.10+; runtime and tests use only the standard library. No drive, BIOS, game image, PS5 SDK, network, or installation is needed.
 
 From this project directory:
